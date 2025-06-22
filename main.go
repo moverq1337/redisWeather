@@ -9,6 +9,6 @@ import (
 func main() {
 	config.LoadEnv()
 	r := gin.Default()
-	r.GET("/weather/:city", controllers.WeatherInfo)
+	r.GET("/weather/:city", controllers.GetWeather)
 	r.Run()
 }

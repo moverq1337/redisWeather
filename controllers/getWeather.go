@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func WeatherInfo(c *gin.Context) {
+func GetWeather(c *gin.Context) {
 	var weather models.Weather
 	city := c.Param("city")
 	link := os.Getenv("url") + city + "&appid=" + os.Getenv("apiKey") + "&units=metric"
