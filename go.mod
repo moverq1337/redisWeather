@@ -1,4 +1,4 @@
-module redisWeather
+module github.com/moverq1337/redisWeather
 
 go 1.24
 
