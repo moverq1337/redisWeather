@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	config.RedisInit()
 	config.LoadEnv()
 	r := gin.Default()
 	r.GET("/weather/:city", controllers.GetWeather)

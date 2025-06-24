@@ -1,0 +1,11 @@
+services:
+  rediska:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - ~/apps/redis:/var/lib/redis/data
+    environment:
+      - REDIS_PASSWORD=admin
+      - REDIS_PORT=6379
+      - REDIS_DATABASES=1
